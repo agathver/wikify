@@ -1,0 +1,10 @@
+{>"layouts/base"/}
+
+{<title}{title}{/title}
+
+{<content}
+    <h1>{title}</h1>
+    <p>Welcome to {title}</p>
+    <p>{value}</p>
+{/content}
+

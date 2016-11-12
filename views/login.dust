@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            {+title/}
+        </title>
+        <link href="/css/pure.css" rel="stylesheet"/>
+        <link href="/css/font-awesome.css" rel="stylesheet"/>
+        <link href="/css/login.css" rel="stylesheet"/>
+    </head>
+    <body class="login no-js">
+        <div class="login-form">
+            <form method="POST" class="pure-form pure-form-stacked">
+                <h1>
+                    Sign in
+                </h1>
+                {?error}
+                <p class="error">
+                    {error.message}
+                </p>
+                {/error}
+                <fieldset>
+                    <label for="username">
+                        Username
+                    </label>
+                    <input name="username" id="username" placeholder="Username" type="text"/>
+                    <label for="password">
+                        Password
+                    </label>
+                    <input name="password" id="password" placeholder="Password" type="password"/>
+                    <label for="state">
+                        State
+                    </label>
+                    <label class="pure-checkbox" for="remember">
+                        <input name="remember" id="remember" type="checkbox"/>
+                        Remember me
+                    </input>
+                </label>
+                <button class="pure-button pure-button-primary" type="submit">
+                    Sign in
+                </button>
+            </fieldset>
+        </form>
+    </div>
+    {this}
+</body>
+<script src="/js/ui.js">
+</script>
+</html>

@@ -1,0 +1,42 @@
+{>"layouts/base"/}
+
+{<title}{title}{/title}
+
+{<content}
+    <aside class="sidebar" id="sidebar">
+            <nav class="pure-menu">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu-item-divided pure-menu-selected">
+                        <a class="pure-menu-link" href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="layout">
+            <article id="main">
+                <h1>
+                    {page.title}
+                </h1>
+                <p>
+                    {page.text.content|s}
+                </p>
+            </article>
+        </main>
+{/content}

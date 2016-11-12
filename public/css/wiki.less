@@ -1,0 +1,137 @@
+@sidebar-width: 285px;
+@header-height: 64px;
+@primary: #1f8dd6;
+@accent: #f00;
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: @primary;
+    &:hover, &:active {
+        color: lighten(@primary, 10%);
+    }
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.wiki {
+    padding-top: @header-height;
+    header {
+        background: #fff;
+        height: @header-height;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07);
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        .header-logo, .user-links, .user-box, .nav-button {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: .3px;
+            line-height: 36px;
+            padding: 14px 24px 14px;
+        }
+        .header-logo, .nav-button {
+            border-right: 1px solid #e5e5e5;
+        }
+        .user-links, .user-box, .search-box {
+            border-left: 1px solid #e5e5e5;
+            float: right;
+        }
+        .user-links > a {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .sidebar {
+        margin-left: -@sidebar-width;
+        /* "#menu" width */
+        width: @sidebar-width;
+        position: fixed;
+        top: @header-height;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        /* so the menu or its navicon stays above all content */
+        background: #f0f0f0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &.expanded {
+            left: @sidebar-width
+        }
+        @media(min-width: 48em) {
+            left: @sidebar-width;
+        }
+        a {
+            color: #999;
+            border: none;
+            padding: 1em 2em;
+        }
+        .pure-menu {
+            ul {
+                li {}
+            }
+            .pure-menu-selected a {
+                color: #fff;
+                background: #1f8dd6;
+            }
+            .pure-menu-heading {
+                font-size: 125%;
+                color: #fff;
+                margin: 0;
+            }
+        }
+    }
+    main {
+        padding-top: 1em;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        @media(min-width: 48em) {
+            padding-left: @sidebar-width;
+            /* left col width "#menu" */
+            left: 0;
+        }
+        article {
+            margin: 0 auto;
+            padding: 0 2em;
+            max-width: 800px;
+            margin-bottom: 50px;
+            line-height: 1.6em;
+            h1 {
+                margin: 0.2em 0;
+                font-size: 3em;
+                font-weight: 300;
+            }
+            h2 {
+                font-weight: 300;
+                color: #ccc;
+                padding: 0;
+                margin-top: 0;
+            }
+            .content-subhead {
+                margin: 50px 0 20px 0;
+                font-weight: 300;
+                color: #888;
+            }
+        }
+    }
+}

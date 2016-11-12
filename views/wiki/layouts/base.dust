@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            {+title/}
+        </title>
+        <link href="/css/pure.css" rel="stylesheet"/>
+        <link href="/css/font-awesome.css" rel="stylesheet"/>
+        <link href="/css/wiki.css" rel="stylesheet"/>
+        {+styles/}
+    </head>
+    <body class="wiki no-js">
+        <header>
+            <div class="nav-button">
+                <a id="sidebarLink" href="#">
+                    <span class="fa fa-bars">
+                    </span>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="#">
+                    Company
+                </a>
+            </div>
+            <div class="user-links">
+                <a href="#">
+                    <span class="fa fa-bell">
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="fa fa-user">
+                    </span>
+                    <span class="user-name">
+                        {user.username}
+                    </span>
+                </a>
+            </div>
+        </header>
+        {+content/}
+        <script src="/js/ui.js">
+        </script>
+        {+scripts/}
+    </body>
+</html>

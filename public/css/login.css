@@ -1,0 +1,1 @@
+html,body{box-sizing:border-box;height:100%;min-height:100%}body{color:#777}@media (min-width:320px){body{padding-top:64px;background:#e0e0e0}}a{text-decoration:none;color:#1f8dd6}a:hover,a:active{color:#44a4e4}.login-form{margin:auto;padding:1em;display:table;box-sizing:border-box}@media (min-width:320px){.login-form{box-shadow:0 0 2px 2px #aaa;background:#f0f0f0}}

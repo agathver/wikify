@@ -1,8 +1,7 @@
 (function (window, document) {
 
-    var layout   = document.getElementById('layout'),
-        menu     = document.getElementById('menu'),
-        menuLink = document.getElementById('menuLink');
+        sidebar     = document.getElementById('sidebar'),
+        sidebarLink = document.getElementById('sidebarLink');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -23,13 +22,11 @@
         element.className = classes.join(' ');
     }
 
-    menuLink.onclick = function (e) {
-        var active = 'active';
+    sidebarLink.onclick = function (e) {
+        var active = 'expanded';
 
         e.preventDefault();
-        toggleClass(layout, active);
-        toggleClass(menu, active);
-        toggleClass(menuLink, active);
+        toggleClass(sidebar, active);
     };
 
 }(this, this.document));
