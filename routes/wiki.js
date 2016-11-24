@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var actions = require('../wiki/actions');
+var actions = require('../wikify/actions');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {

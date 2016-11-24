@@ -1,6 +1,6 @@
 var utils = require('../../lib/utils');
-var Page = require('../page');
-var Text = require('../text');
+var Page = require('../models/page');
+var Text = require('../models/text');
 module.exports = function(req, res, next) {
     var reqPage = req.params[0];
     Page.findOne({

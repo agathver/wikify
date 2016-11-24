@@ -8,14 +8,15 @@
   },
   "dependencies": {
     "acl": "^0.4.9",
-    "bcrypt": "^0.8.5",
+    "bcrypt": "^0.8.7",
     "body-parser": "~1.13.2",
     "client-sessions": "^0.7.0",
+    "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^1.1.1",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "dustjs-linkedin": "^2.7.2",
-    "express": "~4.13.1",
+    "express": "^4.14.0",
     "express-session": "^1.13.0",
     "include-all": "^0.1.6",
     "klei-dust": "^1.0.0",
@@ -25,11 +26,15 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-remember-me": "0.0.1",
+    "require-all": "^2.0.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^2.4.5",
+    "mockgoose": "^6.0.8",
+    "mongoose-mock": "^0.4.0",
+    "proxyquire": "^1.7.10",
     "supertest": "^1.2.0"
   }
 }

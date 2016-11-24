@@ -1,7 +1,6 @@
-module.exports =  {
-    server : require('./server'),
-    secrets: require('./secrets'),
-    db: require('./db'),
-    site: require('./site'),
-    protection: require('./protection')
-}
+module.exports = require('require-all')({
+  dirname     :  __dirname,
+  filter      :  /^(?!index)(.+)\.js(?:on)?$/,
+  excludeDirs :  /^\.(git|svn)$/,
+  recursive   : true
+});
