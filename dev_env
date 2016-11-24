@@ -1,0 +1,12 @@
+
+case $1 in
+    "start" )
+    docker start wikify-dev-db;;
+    "stop" )
+    docker stop wikify-dev-db;;
+    "init" )
+    docker create --name wikify-dev-db -p 27017:27017 mongo;;
+    "destroy" )
+    docker rm -f wikify-dev-db;;
+esac
+
