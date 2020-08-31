@@ -1,0 +1,12 @@
+{
+	"login" : {
+			"username": "Username",
+			"password": "Password",
+			"remember_me": "Remember me",
+			"login": "Login",
+			"forgotPassword": "Forgot password",
+			"invalidPassword" : "The pasword you entered is incorrect",
+			"usernameNotFound" : "User with the specified username does not exist"
+
+		}
+}

@@ -1,8 +1,8 @@
 FROM mhart/alpine-node:4
 # FROM mhart/alpine-node
 
-ADD . /code
-WORKDIR /code
+ADD . /app
+WORKDIR /app
 
 #ADD run.sh run.sh
 #RUN chmod +x run.sh
@@ -23,4 +23,4 @@ ENV PORT 8080
 #RUN npm install
 #RUN npm install -g forever
 
-CMD ["/bin/sh","-c","./run.sh"]
+CMD ["node","app.js"]

@@ -3,34 +3,33 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
     "test": "mocha --recursive tests"
   },
   "dependencies": {
-    "acl": "^0.4.9",
-    "bcrypt": "^3.0.1",
-    "body-parser": "^1.18.3",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
     "client-sessions": "^0.8.0",
     "connect-flash": "^0.1.1",
-    "connect-mongodb-session": "^2.0.3",
-    "cookie-parser": "^1.4.3",
-    "debug": "^4.0.1",
-    "dustjs-linkedin": "^2.7.2",
-    "express": "^4.14.0",
-    "express-session": "^1.13.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "i18n": "^0.13.2",
     "include-all": "^4.0.3",
     "klei-dust": "^1.0.0",
-    "less-middleware": "^3.0.1",
-    "mongoose": "^5.2.17",
-    "morgan": "^1.9.1",
-    "passport": "^0.4.0",
+    "less-middleware": "^3.1.0",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "passport-remember-me": "0.0.1",
     "require-all": "^3.0.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "twif": "^1.0.0",
+    "twig": "^1.15.2"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^5.2.0"
+    "mocha": "^8.1.3"
   }
 }

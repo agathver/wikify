@@ -1,5 +1,5 @@
 var expect = require('expect.js');
-var title = require('../../lib/utils/title');
+var title = require('../../src/utils/title');
 
 describe('slug generation', function() {
 	it('should be generating url-encoded output of title names',  function() {

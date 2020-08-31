@@ -1,0 +1,34 @@
+{% extends 'wiki/layouts/base.html.twig' %}
+
+{% block title %}Editing page {{ title }}{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/editor.css"/>
+{% endblock %}
+
+{% block content %}
+    <main class="editor container">
+        <article class="editor-article">
+            <form method="post" action="?action=save">
+                <div class="row">
+                    <label>
+                        Title
+                        <input width="100%" name="title" placeholder="Title" type="text" value="{{ title }}"/>
+                    </label>
+                    <button type="submit">
+                        Save
+                    </button>
+                </div>
+                <label>
+                    Content
+                    <textarea name="text">{{ text.content }}</textarea>
+                </label>
+            </form>
+        </article>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/ckeditor/ckeditor.js"></script>
+    <script src="/js/editor.js"></script>
+{% endblock %}
