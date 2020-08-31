@@ -23,4 +23,4 @@ ENV PORT 8080
 #RUN npm install
 #RUN npm install -g forever
 
-CMD ["node","app.js"]
+CMD ["node","app.ts"]

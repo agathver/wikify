@@ -6,7 +6,7 @@ module.exports = {
     environment: getenv('NODE_ENV', 'development'),
     server: {
         host: getenv('HOST', 'localhost'),
-        port: getenv('PORT', '3000'),
+        port: parseInt(getenv('PORT', '3000')),
         static: 'public'
     },
     site: {

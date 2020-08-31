@@ -1,6 +1,6 @@
-const User = require('../models/user'),
-    bcrypt = require('bcrypt');
-config = require('../config');
+import User from "../models/user";
+import bcrypt from "bcrypt";
+import config from "../config";
 
 function genHash(password) {
     return new Promise(function (resolve, reject) {
