@@ -1,8 +1,8 @@
-function getenv(key, defaultValue) {
+function getenv(key: string, defaultValue: any) {
     return process.env[key] || defaultValue;
 }
 
-module.exports = {
+export default {
     environment: getenv('NODE_ENV', 'development'),
     server: {
         host: getenv('HOST', 'localhost'),

@@ -10,7 +10,7 @@ See it in action ! http://prbaron.github.com/pbckcode/
 1. Download the plugin from the Github repository : [https://github.com/prbaron/pbckcode/tags](https://github.com/prbaron/pbckcode/tags)
 2. Rename it to **pbckcode** (it will be easier to call it into CKEditor)
 3. Place the folder into the plugins folder of CKEditor ( *{Path to CKEDitor}/plugins/* )
-4. Open the config.js file and add the following lines :
+4. Open the config.ts file and add the following lines :
 
 ```
  CKEDITOR.editorConfig = function( config ) {

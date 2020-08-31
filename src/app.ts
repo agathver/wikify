@@ -12,12 +12,12 @@ import i18n from "i18n";
 import twig from "twig";
 
 import {errorHandler} from "./controllers/errors";
-import {isDevelopment} from "./utils";
+import {isDevelopment} from "./utils/environment";
 import httpErrors from 'http-errors';
 
 const routes = require('./routes');
 const users = require('./routes/users');
-const wiki = require('./routes/wiki');
+const wiki = require('./controllers/wiki');
 
 const register = require('./routes/register');
 
@@ -66,11 +66,6 @@ app.use(auth.session());
 
 //configure routes
 app.use('/', routes);
-app.use('/users', users);
-app.use('/wiki', wiki);
-app.use('/login', require('./routes/login')(auth));
-app.use('/register', register);
-
 
 app.use(function (req, res, next) {
     next(new httpErrors.NotFound());
